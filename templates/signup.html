@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf 8">
+<title>Sign up form</title>
+<link rel="stylesheet" href="style1.css">
+<body>
+<form action="" method="post">
+<div class="login-box">
+<h1>SIGN UP</h1>
+<div class="textbox">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="text" placeholder="username" name="username" id="id1" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" placeholder="password" name="password" id="id2" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" placeholder="Confirm password" name="Confirm password" id="id3" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-phone" aria-hidden="true"></i>
+<input type="tel" placeholder="Phone number" pattern="\d{10}" name="Phone_number" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<input type="email" placeholder="name@domail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+<input type="city" placeholder="Account_type" name="Account_type" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-address-card" aria-hidden="true"></i>
+<input type="Address line1" placeholder="Address line 1" name="Address1" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-address-card" aria-hidden="true"></i>
+<input type="Address line 2" placeholder="Address line 2" name="Address2" id="id4" value="" required />
+</div>
+<div class="textbox">
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+<input type="city" placeholder="City" name="City" value="" required />
+</div>
+
+<div class="textbox">
+<i class="fa fa-globe" aria-hidden="true"></i>
+<input type="State" placeholder="State" name="State" value="" required/>
+</div>
+<button class="btn primary btn-lg" type="submit" name="signingup" onclick="signup()" value="SUBMIT">Submit</button>
+</div>
+<button type="submit" name="login" onclick="login()">Login</button>
+</form>
+</body>
+</html>

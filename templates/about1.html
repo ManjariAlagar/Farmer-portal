@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vegefoods</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="static/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="static/css/flaticon.css">
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <link rel="stylesheet" href="static/css/style.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </head>
+  <body class="goto-here">
+<div class="py-1 bg-primary">
+    <div class="container">
+    <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+    <div class="col-lg-12 d-block">
+    <div class="row d-flex">
+    <div class="col-md pr-4 d-flex topper align-items-center">
+    <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+    <span class="text">9894999327</span>
+    </div>
+    <div class="col-md pr-4 d-flex topper align-items-center">
+    <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+    <span class="text">ratchanaraj2020@email.com</span>
+    </div>
+    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+    <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vegefoods</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="{{url_for('home')}}" class="nav-link">Home</a></li>
+	          <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Upload</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item " href="{{url_for('uploadstock')}}">Upload through form</a>
+                <a class="dropdown-item" href="{{url_for('products')}}">Upload through SMS</a>
+              </div>
+            </li>
+	          <li class="nav-item"><a href="https://agmarknet.gov.in/PriceAndArrivals/CommodityDailyStateWise.aspx" class="nav-link">Market-wise Daily Report</a></li>
+	          <li class="nav-item"><a href="{{url_for('contact')}}" class="nav-link">Contact</a></li>
+
+	          <li class="nav-item cta cta-colored"><a href="{{url_for('cart')}}"" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('static/images/bg_1.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="{{url_for('home1')}}">Home</a></span> <span>Welcome</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+<div class="container">
+<div class="row">
+<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+<a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
+<span class="icon-play"></span>
+</a>
+</div>
+<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
+          <div class="heading-section-bold mb-4 mt-md-5">
+          <div class="ml-md-0">
+            <h2 class="mb-4">Welcome to Vegefoods an eCommerce website</h2>
+            </div>
+          </div>
+          <div class="pb-md-5">
+          <p>Far far away, behind the word mountains, far from the states of India</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<img src="static/images/monthlysales.jpg"/ alt="sales">
+</div>
+<div class="column">
+<script type='text/javascript' src='https://darksky.net/widget/default/9.9345,78.1333/us12/en.js?width=100%&height=350&title=madurai&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script> 
+</div>
+</div>
+<div class="scrollmenu">
+  <iframe class="pb-video-frame" width="25%" height="230" src="https://www.youtube.com/embed/QtG1-MKVU-s" frameborder="0" allowfullscreen></iframe>
+				<iframe class="pb-video-frame" width="25%" height="230" src="https://www.youtube.com/embed/IgVNt2yDCgI" frameborder="0" allowfullscreen></iframe>
+                <iframe class="pb-video-frame" width="25%" height="230" src="https://www.youtube.com/embed/LiBGA9CRn3M" frameborder="0" allowfullscreen></iframe>
+	<button class="button" onclick="location.href = 'scroll.html';"><span>For more videos </span></button>            
+</div>
+
+</section>
+<script>
+    function show() {
+        document.getElementById("write").innerHTML = username;
+    }
+    </script>
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <h1 style="color: #0000FF; font-size:3em;">Voice Controlled Notes</h1>
+            <div class="app"> <br/>
+                <h3 style="color: #0000FF; font-size:1em;">Add Your message</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea"  placeholder="Create a new note by typing or using voice recognition." rows="6" width="70px"></textarea>
+                </div>         
+                <button style="background:#7b68ee", "cursor:pointer" id="start-record-btn"title="Start Recording">Start Recognition<i class='fas fa-microphone'></i></button>
+                <button style="background:#7b68ee", "cursor:pointer" id="pause-record-btn" title="Pause Recording">Pause Recognition<i class='fas fa-pause'></i></i></button>
+                <button style="background:#7b68ee", "cursor:pointer" id="save-note-btn" title="Save Note">Save Note</button>   
+                <p id="recording-instructions",style="background:#3cb371">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <h3 style="color: #0000FF; font-size:1em;">My Notes</h3>
+                <ul id="notes">
+                    <li>
+                        <p class= no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div></section>
+		<section>
+<div class="container">
+<div class="row no-gutters ftco-services">
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+            <span class="flaticon-shipped"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Free Shipping</h3>
+                <span>On order over Rs.300</span>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+            <span class="flaticon-diet"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Always Fresh</h3>
+                <span>Product well package</span>
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+            <span class="flaticon-award"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Superior Quality</h3>
+                <span>Quality Products</span>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+            <span class="flaticon-customer-service"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Support</h3>
+                <span>24/7 Support</span>
+              </div>
+            </div>      
+          </div>
+        </div>
+</div>
+</section>
+<section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+          	<span class="subheading">Testimony</span>
+            <h2 class="mb-4">Our satisfied customer says</h2>
+            <p>Delicious produce filled with nutrients</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(static/images/Mishkath.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Fresh products right at your doorstep!Healthy and Yummy</p>
+                    <p class="name">Mishkath</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(static/images/image1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Healthy and fresh from farm</p>
+                    <p class="name">Kathir</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(static/images/image2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Great quality products at reasonable prices</p>
+                    <p class="name">Aditi</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(static/images/image3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+				  	 <p class="mb-5 pl-4 line">Satisfied customers and sellers</p>
+                    <p class="mb-5 pl-4 line"></p>
+                    <p class="name">Varsha</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(static/images/image4.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Glad to help our farmers and keep my family healthy.</p>
+                    <p class="name">Vicky</p>
+                    <span class="position">Customer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+      <div class="row">
+      <div class="mouse">
+<a href="#" class="mouse-icon">
+<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+</a>
+</div>
+      </div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Vegefoods</h2>
+              <p>Far far away, behind the word mountains, far from the states of India .</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script >try {
+  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var recognition = new SpeechRecognition();
+}
+catch(e) {
+  console.error(e);
+  $('.no-browser-support').show();
+  $('.app').hide();
+}
+
+
+var noteTextarea = $('#note-textarea');
+var instructions = $('#recording-instructions');
+var notesList = $('ul#notes');
+
+var noteContent = '';
+
+// Get all notes from previous sessions and display them.
+var notes = getAllNotes();
+renderNotes(notes);
+
+
+
+/*-----------------------------
+      Voice Recognition 
+------------------------------*/
+
+// If false, the recording will stop after a few seconds of silence.
+// When true, the silence period is longer (about 15 seconds),
+// allowing us to keep recording even when the user pauses. 
+recognition.continuous = true;
+
+// This block is called every time the Speech APi captures a line. 
+recognition.onresult = function(event) {
+
+  // event is a SpeechRecognitionEvent object.
+  // It holds all the lines we have captured so far. 
+  // We only need the current one.
+  var current = event.resultIndex;
+
+  // Get a transcript of what was said.
+  var transcript = event.results[current][0].transcript;
+
+  // Add the current transcript to the contents of our Note.
+  // There is a weird bug on mobile, where everything is repeated twice.
+  // There is no official solution so far so we have to handle an edge case.
+  var mobileRepeatBug = (current == 1 && transcript == event.results[0][0].transcript);
+
+  if(!mobileRepeatBug) {
+    noteContent += transcript;
+    noteTextarea.val(noteContent);
+  }
+};
+
+recognition.onstart = function() { 
+  instructions.text('Voice recognition activated. Try speaking into the microphone.');
+}
+
+recognition.onspeechend = function() {
+  instructions.text('You were quiet for a while so voice recognition turned itself off.');
+}
+
+recognition.onerror = function(event) {
+  if(event.error == 'no-speech') {
+    instructions.text('No speech was detected. Try again.');  
+  };
+}
+
+
+
+/*-----------------------------
+      App buttons and input 
+------------------------------*/
+
+$('#start-record-btn').on('click', function(e) {
+  if (noteContent.length) {
+    noteContent += ' ';
+  }
+  recognition.start();
+});
+
+
+$('#pause-record-btn').on('click', function(e) {
+  recognition.stop();
+  instructions.text('Voice recognition paused.');
+});
+
+// Sync the text inside the text area with the noteContent variable.
+noteTextarea.on('input', function() {
+  noteContent = $(this).val();
+})
+
+$('#save-note-btn').on('click', function(e) {
+  recognition.stop();
+
+  if(!noteContent.length) {
+    instructions.text('Could not save empty note. Please add a message to your note.');
+  }
+  else {
+    // Save note to localStorage.
+    // The key is the dateTime with seconds, the value is the content of the note.
+    saveNote(new Date().toLocaleString(), noteContent);
+
+    // Reset variables and update UI.
+    noteContent = '';
+    renderNotes(getAllNotes());
+    noteTextarea.val('');
+    instructions.text('Note saved successfully.');
+  }
+      
+})
+
+
+notesList.on('click', function(e) {
+  e.preventDefault();
+  var target = $(e.target);
+
+  // Listen to the selected note.
+  if(target.hasClass('listen-note')) {
+    var content = target.closest('.note').find('.content').text();
+    readOutLoud(content);
+  }
+
+  // Delete note.
+  if(target.hasClass('delete-note')) {
+    var dateTime = target.siblings('.date').text();  
+    deleteNote(dateTime);
+    target.closest('.note').remove();
+  }
+});
+
+
+
+/*-----------------------------
+      Speech Synthesis 
+------------------------------*/
+
+function readOutLoud(message) {
+var speech = new SpeechSynthesisUtterance();
+
+  // Set the text and voice attributes.
+speech.text = message;
+speech.volume = 1;
+speech.rate = 1;
+speech.pitch = 1;
+  
+window.speechSynthesis.speak(speech);
+}
+
+
+
+/*-----------------------------
+      Helper Functions 
+------------------------------*/
+
+function renderNotes(notes) {
+  var html = '';
+  if(notes.length) {
+    notes.forEach(function(note) {
+      html+= `<li class="note">
+        <p class="header">
+          <span class="date">${note.date}</span>
+          <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
+          <a href="#" class="delete-note" title="Delete">Delete</a>
+        </p>
+        <p class="content">${note.content}</p>
+      </li>`;    
+    });
+  }
+  else {
+    html = '<li><p class="content">You don\'t have any notes yet.</p></li>';
+  }
+  notesList.html(html);
+}
+
+
+function saveNote(dateTime, content) {
+  localStorage.setItem('note-' + dateTime, content);
+}
+
+
+function getAllNotes() {
+  var notes = [];
+  var key;
+  for (var i = 0; i < localStorage.length; i++) {
+    key = localStorage.key(i);
+
+    if(key.substring(0,5) == 'note-') {
+      notes.push({
+        date: key.replace('note-',''),
+        content: localStorage.getItem(localStorage.key(i))
+      });
+    } 
+  }
+  return notes;
+}
+
+
+function deleteNote(dateTime) {
+  localStorage.removeItem('note-' + dateTime); 
+}
+</script>
+ 
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Shop</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Journal</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">FAQs</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/jquery.waypoints.min.js"></script>
+  <script src="static/js/jquery.stellar.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+  <script src="static/js/aos.js"></script>
+  <script src="static/js/jquery.animateNumber.min.js"></script>
+  <script src="static/js/bootstrap-datepicker.js"></script>
+  <script src="static/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="static/js/google-map.js"></script>
+  <script src="static/js/main.js"></script>
+    
+  </body>
+</html>
